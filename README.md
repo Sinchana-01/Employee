@@ -2,190 +2,80 @@
 
 ## Overview
 
-Employee Information Management System is a desktop-based Java application developed using Java Swing, Java IO Streams, and File Handling concepts. The application reads employee information from a text file, processes the data, and displays it in a structured graphical user interface.
+Employee Information Management System is a desktop-based Java application developed using Java Swing and Java IO Streams. The application reads employee information from a text file, processes the data, and displays it in a structured and interactive graphical user interface.
 
-The project demonstrates practical implementation of file handling, object-oriented programming, collections, exception handling, and GUI development in Java.
+The system enables users to load employee records, search employees by ID, update employee information, delete employee records, and automatically save modifications back to the source file, ensuring data consistency and persistence.
 
----
+## Key Features
 
-## Features
-
-* Read employee data from a text file
-* Parse unstructured employee records
-* Display employee information in a JTable
-* Professional Swing-based user interface
-* Loading indicator using Progress Bar
-* Dynamic data refresh functionality
-* Exception handling for file operations
-* Object-Oriented Design
-* Interactive desktop application
-
----
+* Load employee records from a text file
+* Display employee information using JTable
+* Search employees by Employee ID
+* Update employee details
+* Delete employee records
+* Automatic synchronization of changes with the source file
+* Duplicate Employee ID validation
+* Progress bar for loading operations
+* User-friendly Swing-based graphical interface
+* Exception handling for reliable file operations
 
 ## Technologies Used
 
-### Programming Language
-
 * Java
-
-### GUI Framework
-
 * Java Swing
+* Java IO Streams
 
-### File Handling
-
-* FileInputStream
-* InputStreamReader
-* BufferedReader
-
-### Collections Framework
-
-* ArrayList
-
-### IDE
-
+  * FileInputStream
+  * InputStreamReader
+  * BufferedReader
+  * BufferedWriter
+  * FileWriter
+* Collections Framework (ArrayList)
+* SwingWorker
 * Eclipse IDE
-
----
-
-## Project Architecture
-
-employees.txt
-
-↓
-
-FileInputStream
-
-↓
-
-InputStreamReader
-
-↓
-
-BufferedReader
-
-↓
-
-Employee Objects
-
-↓
-
-ArrayList<Employee>
-
-↓
-
-Swing JTable
-
-↓
-
-Graphical User Interface
-
----
+* Git & GitHub
 
 ## Project Structure
 
-EmployeeManagementSystem.java
-
-employees.txt
-
-README.md
-
----
-
-## Employee Data Format
-
-Example:
-
-Employee Name: John Smith
-
-ID: 101
-
-Department: IT
-
-Salary: 75000
-
-Employee Name: Alice Johnson
-
-ID: 102
-
-Department: HR
-
-Salary: 65000
-
----
+```text
+Employee-Information-Management-System
+│
+├── src
+│   └── EmployeeManagementSystem.java
+│
+├── employees.txt
+│
+└── README.md
+```
 
 ## Core Concepts Implemented
 
-### Java File Handling
-
-* Reading employee records from text files
-* Stream-based file processing
-
-### Java IO Streams
-
-* FileInputStream
-* InputStreamReader
-* BufferedReader
-
-### Swing Components
-
-* JFrame
-* JTable
-* JScrollPane
-* JButton
-* JLabel
-* JProgressBar
-* JOptionPane
-
-### Object-Oriented Programming
-
-* Class and Objects
-* Encapsulation
-* Constructor Usage
-
-### Exception Handling
-
-* try-catch blocks
-* Error reporting
-
----
+* Object-Oriented Programming (OOP)
+* File Handling
+* Java IO Streams
+* Collections Framework
+* Event Handling
+* Exception Handling
+* Multithreading using SwingWorker
+* Desktop GUI Development with Swing
 
 ## Application Workflow
 
-1. User clicks "Load Employee Data"
-2. Existing records are cleared
-3. Loading indicator appears
-4. Employee file is read
-5. Employee objects are created
-6. Data is displayed in JTable
-7. Success message is shown
+1. Employee records are stored in a text file.
+2. The application reads employee data using Java IO Streams.
+3. Employee information is parsed and stored as objects.
+4. Records are displayed in a JTable.
+5. Users can search, update, or delete employee records.
+6. Any modifications are automatically saved back to the source file.
+7. Updated information is available the next time the application is loaded.
 
----
+## How to Run
 
-## Learning Outcomes
+1. Open the project in Eclipse IDE.
+2. Ensure `employees.txt` is available in the project root directory.
+3. Run `EmployeeManagementSystem.java`.
+4. Click **Load Data** to load and display employee records.
+5. Use the Search, Update, and Delete functionalities as required.
 
-* Understanding Java File Handling
-* Working with IO Streams
-* Building Desktop Applications using Swing
-* Processing text-based data
-* Using Collections Framework
-* Implementing Event Handling
-* Designing User-Friendly Interfaces
 
----
 
-## Future Enhancements
-
-* Employee Search Functionality
-* Employee Update and Delete Operations
-* Database Integration using MySQL
-* CSV and Excel Export
-* Employee Statistics Dashboard
-* Charts and Graphs
-* Login Authentication System
-
----
-
-## Author
-
-Developed as a Java Mini Project to demonstrate Java File Handling, IO Streams, Swing GUI Development, Collections Framework, and Object-Oriented Programming concepts.
